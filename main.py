@@ -1,3 +1,10 @@
+'''
+
+Link to the GitHub Repository:
+https://github.com/vikrams169/Dijkstra-Path-Planner
+
+'''
+
 # Importing the required libraries
 import os
 import shutil
@@ -207,25 +214,25 @@ def main():
     # Initializing the start and goal positions of the path from user input
     initialize_start_and_goal_pos(viz_window)
 
-    print("Starting the Pathfinding Process! This may take upto a minute.")
+    print("\nStarting the Pathfinding Process! This may take upto a minute.\n")
 
     # Running the Dijkstra Algorithm
     start_time = time.time()
     dijkstra(viz_window)
     end_time = time.time()
-    print("Success! Found the Optimal Path")
-    print("Time taken for the pathfinding process using Dijkstra's Algorithm: ",end_time-start_time," seconds")
+    print("\nSuccess! Found the Optimal Path\n")
+    print("\nTime taken for the pathfinding process using Dijkstra's Algorithm: ",end_time-start_time," seconds\n")
 
     #Making the video from the animation frames
-    print("Now Generating the video for animation")
+    print("\nNow Generating the video for animation\n")
     make_video(FRAME_DIRECTORY,VIDEO_NAME)
-    print("Saved the video as sample_video.mp4 in the same directory as this code file!")
+    print("\nSaved the video as sample_video.mp4 in the same directory as this code file!\n")
 
     # Removing all the video frames
     shutil.rmtree(FRAME_DIRECTORY)
 
     # Playing the video
-    print("Playing the video animation of the path computation")
+    print("\nPlaying the video animation of the path computation\n")
     play_video(VIDEO_NAME)
 
 if __name__ == "__main__":

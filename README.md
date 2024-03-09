@@ -17,7 +17,7 @@ On finding the final path, the planner makes a video with intermediate frames an
 This project majorly uses PyGame for generating the visualiziation and OpenCV and ImageIO for displaying the animation.
 
 ## Dependencies
-The dependencies for this Python 3project include the following:
+The dependencies for this Python 3 project include the following:
 <ul>
 <li> NumPy
 <li> PyGame
@@ -43,6 +43,13 @@ On doing so, the terminal should prompt for the coordinate positions of start an
 <ul>
 <li> Enter integer values
 <li> Use the coordinate system considering the bottom-left of the window/map as the origin
-<li> If any of the coordinate locations you have enetered is not valid i.e. out of map bounds, or within an obstacle/its clearance, you will be prompted to enter all the coordinate locations again till they are valid.
+<li> If any of the coordinate locations you have enetered is not valid i.e. out of map bounds, or within an obstacle/its clearance, you will be prompted to enter all the coordinate locations again till they are valid. Note that even the walls/boundaries of the grid world have a clearance of 5 grid cells.
 </ul>
+
+A sample set of start and goal positions to enter (that goes from one corner of the grid to the other) include the one below. This particular case can execute within 10-50 seconds depending upon system specifications.
+<ul>
+<li> Start Position: (6,494)
+<li> Goal Position: (1194,6)
+</ul>
+
 After the program accepts your start and goal locations, it will start computing the path. It will keep on adding intermediate frames to a newly created `animation_frames` directory. Ater computing the final path, it will generate and display a video `sample_video.mp4`from the saved frames and delete all the individual frames themselvers along with the `animation_frames` directory.
