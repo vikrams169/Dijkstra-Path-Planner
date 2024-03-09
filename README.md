@@ -4,11 +4,12 @@
 
 ### Vikram Setty (119696897)
 
-An implementation of Dijkstra's Algorithm to plan optimal paths between a known starting and goal position in an obstacle-ridden grid world
+An implementation of Dijkstra's Algorithm to plan optimal paths between a known starting and goal position in an obstacle-ridden 1200*500 grid world.
+
+The link to the GitHub Repository can be found [here](https://github.com/vikrams169/Dijkstra-Path-Planner).
+
 
 ## Overview
-This project uses Dijkstra's Algorithm to plan paths between a user-input start and goal position in a 1200*500 obstacle-ridden gird world.
-
 On giving start and goal location coordinates, the path planner computes the shortest path using Dijkstra's Algorithm while avoiding obstacles (with a clearance of 5 mm).
 
 On finding the final path, the planner makes a video with intermediate frames and displays it as a pop-up animation.
@@ -38,3 +39,10 @@ To run the code, execute the following command
 ```sh
     python3 dijkstra_Vikram_Setty.py
 ```
+On doing so, the terminal should prompt for the coordinate positions of start and goal locations which the user has to enter. Note a couple points:
+<ul>
+<li> Enter integer values
+<li> Use the coordinate system considering the bottom-left of the window/map as the origin
+<li> If any of the coordinate locations you have enetered is not valid i.e. out of map bounds, or within an obstacle/its clearance, you will be prompted to enter all the coordinate locations again till they are valid.
+</ul>
+After the program accepts your start and goal locations, it will start computing the path. It will keep on adding intermediate frames to a newly created `animation_frames` directory. Ater computing the final path, it will generate and display a video `sample_video.mp4`from the saved frames and delete all the individual frames themselvers along with the `animation_frames` directory.
