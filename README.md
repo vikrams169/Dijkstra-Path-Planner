@@ -46,10 +46,10 @@ On doing so, the terminal should prompt for the coordinate positions of start an
 <li> If any of the coordinate locations you have enetered is not valid i.e. out of map bounds, or within an obstacle/its clearance, you will be prompted to enter all the coordinate locations again till they are valid. Note that even the walls/boundaries of the grid world have a clearance of 5 grid cells.
 </ul>
 
-A sample set of start and goal positions to enter (that goes from one corner of the grid to the other) include the one below. This particular case can execute within 10-50 seconds depending upon system specifications.
+A sample set of start and goal positions to enter (that goes from one corner of the grid to the other) include the one below. This particular case can execute within 15-55 seconds depending upon system specifications.
 <ul>
 <li> Start Position: (6,494)
 <li> Goal Position: (1194,6)
 </ul>
 
-After the program accepts your start and goal locations, it will start computing the path. It will keep on adding intermediate frames to a newly created `animation_frames` directory. Ater computing the final path, it will generate and display a video `sample_video.mp4`from the saved frames and delete all the individual frames themselvers along with the `animation_frames` directory.
+After the program accepts your start and goal locations, it will start computing the path.It will keep on adding intermediate frames to a newly created `animation_frames` directory. Ater computing the final path, it will generate and display a video `sample_video.mp4`from the saved frames and delete all the individual frames themselvers along with the `animation_frames` directory. The total time taken to run Dijkstra's Algorithm will be displayed to the terminal as well
