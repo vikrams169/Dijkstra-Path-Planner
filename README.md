@@ -1,18 +1,17 @@
 # Dijkstra-Path-Planner
 
-## ENPM661: Project 2 Submission
-
-### Vikram Setty (119696897)
-
 An implementation of Dijkstra's Algorithm to plan optimal paths between a known starting and goal position in an obstacle-ridden 1200*500 grid world.
-
-The link to the GitHub Repository can be found [here](https://github.com/vikrams169/Dijkstra-Path-Planner).
-
 
 ## Overview
 On giving start and goal location coordinates, the path planner computes the shortest path using Dijkstra's Algorithm while avoiding obstacles (with a clearance of 5 mm).
 
 On finding the final path, the planner makes a video with intermediate frames and displays it as a pop-up animation.
+
+A video simulating the planner computing the optimal trajectory can be found as `sample_video.mp4`. Further, the final path visualization in the map looks as shown below. The black represents obstacles, gray represents obstacle and wall clearance, and the white areas are open space. The blue filled gridcells have already been explored by the planner and the final optimal path is shown in green.
+
+<p align="center">
+  <img src="sample_path.png"/>
+</p>
 
 This project majorly uses PyGame for generating the visualiziation and OpenCV and ImageIO for displaying the animation.
 
