@@ -36,7 +36,7 @@ They can be installed using the following commands.
 ## Running the Code
 To run the code, execute the following command
 ```sh
-    python3 dijkstra_Vikram_Setty.py
+    python3 main.py
 ```
 On doing so, the terminal should prompt for the coordinate positions of start and goal locations which the user has to enter. Note a couple points:
 <ul>
